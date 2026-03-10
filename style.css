@@ -24,12 +24,34 @@ body {
 }
 
 .header h2 { margin: 0; font-size: 1rem; }
-.legend { display: flex; justify-content: center; gap: 15px; margin-top: 4px; font-size: 0.7rem; }
-.leg-item { display: flex; align-items: center; gap: 4px; }
-.box { width: 10px; height: 10px; border-radius: 2px; }
-.f-box { background: #f39c12; border: 1px solid #d35400; }
-.c-box { background: #ffe0b2; border: 1px dashed #f39c12; }
+.legend { 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: 8px; 
+    font-size: 0.7rem; 
+}
 
+.leg-group { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    background: rgba(255,255,255,0.1);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.leg-title { font-weight: bold; color: #bdc3c7; margin-right: 5px; }
+
+.leg-item { display: flex; align-items: center; gap: 5px; }
+
+.box { width: 12px; height: 12px; border-radius: 2px; }
+
+/* Colores de la leyenda */
+.f-box-prev { background: #f39c12; border: 1px solid #d35400; } /* Naranja Final */
+.c-box-prev { background: #ffe0b2; border: 1px dashed #f39c12; } /* Naranja Cursada */
+.f-box-next { background: #27ae60; border: 1px solid #1e8449; } /* Verde Final */
+.c-box-next { background: #c8e6c9; border: 1px dashed #27ae60; } /* Verde Cursada */
 .tabla-carrera { 
     flex: 1 1 auto; /* Se estira para ocupar el resto del alto */
     background: white; 
@@ -83,4 +105,5 @@ body {
 .previa-final { background: #f39c12 !important; color: white !important; border: 2px solid #d35400; font-weight: bold; }
 .previa-cursada { background: #ffe0b2 !important; color: #d35400 !important; border: 1px dashed #f39c12; }
 .siguiente-final { background: #27ae60 !important; color: white !important; border: 2px solid #1e8449; font-weight: bold; }
+
 .siguiente-cursada { background: #c8e6c9 !important; color: #1e8449 !important; border: 1px dashed #27ae60; }
